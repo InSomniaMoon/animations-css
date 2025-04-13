@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/css/pages/accueil.css" />
+    <script type="module" src="src/js/pages/accueil.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a href="/" class="active">Accueil</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Dernières activités</h1>
+
+      <div class="activities">
+        <div class="activity-wrapper" data-category="run" id="activity-1">
+          <div class="activity">
+            <img
+              src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/YIRKPSH6TXLLSMYZSUBWWVD3GZ76NUR7FBAHB37RSSAEAVIP3264OJ6FZMMDKNYUE442WFA6JN7GWVR4UVDC4QOCX3MVLUZTNCNA===="
+              class="activity-image"
+            />
+            <div class="activity-content">
+              <h3
+                class="activity-title"
+                style="view-transition-name: activity_1-title"
+              >
+                Morning Run avec Jadou
+              </h3>
+              <p class="activity-description">
+                Pour aller encourager les filles (Kakos (👸🏻), Tchoup (🤸🏻‍♀️) et
+                Popex (🤹🏻‍♀️))
+              </p>
+            </div>
+          </div>
+          <div class="details">
+            <div class="details-image-container">
+              <img
+                src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/YIRKPSH6TXLLSMYZSUBWWVD3GZ76NUR7FBAHB37RSSAEAVIP3264OJ6FZMMDKNYUE442WFA6JN7GWVR4UVDC4QOCX3MVLUZTNCNA===="
+                class="activity-image"
+              />
+              <a class="details-button" href="/activities/1"
+                >Voir les détails</a
+              >
+            </div>
+            <div class="details-content">
+              <div class="details-item">
+                <p class="details-item-label">Distance</p>
+                <p class="details-item-value">
+                  11.02<abbr class="unit" title="kilometers"> km</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Elev Gain</p>
+                <p class="details-item-value">
+                  335<abbr class="unit" title="meters"> m</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Time</p>
+                <p class="details-item-value">
+                  1<abbr class="unit" title="hour">h</abbr> 12<abbr
+                    class="unit"
+                    title="minute"
+                    >m</abbr
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activity-wrapper" data-category="run" id="activity-2">
+          <div class="activity">
+            <img
+              src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/SJVFADU7QF6NGO2DDLEC7XRXCWMH4WK5KTUJ5TXRD3GUNXFYIHAZ3X5SW5HDTQEQHRFD3ESTZZFMEKV5CKY2NGBKH2FXJS5LAR2Q===="
+              class="activity-image"
+            />
+            <div class="activity-content">
+              <h3
+                class="activity-title"
+                style="view-transition-name: activity_2-title"
+              >
+                Lunch Run
+              </h3>
+              <p class="activity-description">On ressort les v-run</p>
+            </div>
+          </div>
+          <div class="details">
+            <div class="details-image-container">
+              <img
+                src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/SJVFADU7QF6NGO2DDLEC7XRXCWMH4WK5KTUJ5TXRD3GUNXFYIHAZ3X5SW5HDTQEQHRFD3ESTZZFMEKV5CKY2NGBKH2FXJS5LAR2Q===="
+                class="activity-image"
+              />
+              <a class="details-button" href="/activities/2"
+                >Voir les détails</a
+              >
+            </div>
+            <div class="details-content">
+              <div class="details-item">
+                <p class="details-item-label">Distance</p>
+                <p class="details-item-value">
+                  8.40<abbr class="unit" title="kilometers"> km</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Pace</p>
+                <p class="details-item-value">
+                  4:53<abbr class="unit" title="minutes per kilometer">
+                    /km</abbr
+                  >
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Time</p>
+                <p class="details-item-value">
+                  41<abbr class="unit" title="minute">m</abbr> 0<abbr
+                    class="unit"
+                    title="second"
+                    >s</abbr
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activity-wrapper" data-category="run" id="activity-3">
+          <div class="activity">
+            <img
+              src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2K4DFCF2RAVD3NE4EV3O6SZSY5E5ZHBXPZ4XF4ZINHCI7M6S2F3WQ4XTFZ5NCVWF27UZIOQLACV7GY2M5KQSARP6RBKEGTXPYE3Q===="
+              class="activity-image"
+            />
+            <div class="activity-content">
+              <h3
+                class="activity-title"
+                style="view-transition-name: activity_3-title"
+              >
+                Sortie longue avec 3*15' @42k
+              </h3>
+              <p class="activity-description">
+                Pfiou il fait chaud ici 🥵 au dessus de 5° mon corps ne court
+                pas bien 😅 mais séance validée 😌 maintenant il faut prier pour
+                les fibulaires 🤞🏼 11km d'échauffement avec les Triumph 🩷 10km de
+                séance avec les Carbone 💙 9km de récup avec les Triumph 🩷
+              </p>
+            </div>
+          </div>
+          <div class="details">
+            <div class="details-image-container">
+              <img
+                src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2K4DFCF2RAVD3NE4EV3O6SZSY5E5ZHBXPZ4XF4ZINHCI7M6S2F3WQ4XTFZ5NCVWF27UZIOQLACV7GY2M5KQSARP6RBKEGTXPYE3Q===="
+                class="activity-image"
+              />
+              <a class="details-button" href="/activities/3"
+                >Voir les détails</a
+              >
+            </div>
+            <div class="details-content">
+              <div class="details-item">
+                <p class="details-item-label">Distance</p>
+                <p class="details-item-value">
+                  30.00<abbr class="unit" title="kilometers"> km</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Pace</p>
+                <p class="details-item-value">
+                  5:14<abbr class="unit" title="minutes per kilometer">
+                    /km</abbr
+                  >
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Time</p>
+                <p class="details-item-value">
+                  2<abbr class="unit" title="hour">h</abbr> 36<abbr
+                    class="unit"
+                    title="minute"
+                    >m</abbr
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activity-wrapper" data-category="bike" id="activity-4">
+          <div class="activity">
+            <img
+              src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/QHV4JA6Q5TIR6YIXMHZMT7IKLVNIH2RKR54S4YXQDGZCINMCFU5PEQXGXQ7FOINDOIZATEXH324PDYO6YXNW6ZIPNXA2HRVJETFQ===="
+              class="activity-image"
+            />
+            <div class="activity-content">
+              <h3
+                class="activity-title"
+                style="view-transition-name: activity_4-title"
+              >
+                Sortie vélo en soirée
+              </h3>
+              <p class="activity-description"></p>
+            </div>
+          </div>
+          <div class="details">
+            <div class="details-image-container">
+              <img
+                src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/QHV4JA6Q5TIR6YIXMHZMT7IKLVNIH2RKR54S4YXQDGZCINMCFU5PEQXGXQ7FOINDOIZATEXH324PDYO6YXNW6ZIPNXA2HRVJETFQ===="
+                class="activity-image"
+              />
+              <a class="details-button" href="/activities/4"
+                >Voir les détails</a
+              >
+            </div>
+            <div class="details-content">
+              <div class="details-item">
+                <p class="details-item-label">Distance</p>
+                <p class="details-item-value">
+                  2.22<abbr class="unit" title="kilometers"> km</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Elev Gain</p>
+                <p class="details-item-value">
+                  2<abbr class="unit" title="meters"> m</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Time</p>
+                <p class="details-item-value">
+                  5<abbr class="unit" title="minute">m</abbr> 57<abbr
+                    class="unit"
+                    title="second"
+                    >s</abbr
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activity-wrapper" data-category="run" id="activity-5">
+          <div class="activity">
+            <img
+              src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5EVIBQRFJIAFFNKDG6GU2UNCW57QAYXHG266H252VVN6WBPKQ2RF7P3IXIMM7VGY46XPIJWVIT6A4RN7GZUX5KOKFXJXDDACRKKQ===="
+              class="activity-image"
+            />
+            <div class="activity-content">
+              <h3
+                class="activity-title"
+                style="view-transition-name: activity_5-title"
+              >
+                🟢 6 x 15s @3.00 + 3min rest
+              </h3>
+              <p class="activity-description"></p>
+            </div>
+          </div>
+          <div class="details">
+            <div class="details-image-container">
+              <img
+                src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5EVIBQRFJIAFFNKDG6GU2UNCW57QAYXHG266H252VVN6WBPKQ2RF7P3IXIMM7VGY46XPIJWVIT6A4RN7GZUX5KOKFXJXDDACRKKQ===="
+                class="activity-image"
+              />
+              <a class="details-button" href="/activities/5"
+                >Voir les détails</a
+              >
+            </div>
+            <div class="details-content">
+              <div class="details-item">
+                <p class="details-item-label">Distance</p>
+                <p class="details-item-value">
+                  7.65<abbr class="unit" title="kilometers"> km</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Pace</p>
+                <p class="details-item-value">
+                  5:41<abbr class="unit" title="minutes per kilometer">
+                    /km</abbr
+                  >
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Time</p>
+                <p class="details-item-value">
+                  43<abbr class="unit" title="minute">m</abbr> 32<abbr
+                    class="unit"
+                    title="second"
+                    >s</abbr
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activity-wrapper" data-category="rowing" id="activity-6">
+          <div class="activity">
+            <img
+              src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/BM7WDGKMLS22PIGICXEX6I2OKDY5HF7TNSDG5CRXD6C57VHGGQAHP274QSJ7CG64ZAL2MEMOGQQNI6ZRBUSNKUJJRXVDS2IAUHXA===="
+              class="activity-image"
+            />
+            <div class="activity-content">
+              <h3
+                class="activity-title"
+                style="view-transition-name: activity_6-title"
+              >
+                Aviron 4x (407)
+              </h3>
+              <p class="activity-description">
+                Remontée difficile avec vent contre. On fera mieux la prochaine
+                fois !
+              </p>
+            </div>
+          </div>
+          <div class="details">
+            <div class="details-image-container">
+              <img
+                src="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/BM7WDGKMLS22PIGICXEX6I2OKDY5HF7TNSDG5CRXD6C57VHGGQAHP274QSJ7CG64ZAL2MEMOGQQNI6ZRBUSNKUJJRXVDS2IAUHXA===="
+                class="activity-image"
+              />
+              <a class="details-button" href="/activities/6"
+                >Voir les détails</a
+              >
+            </div>
+            <div class="details-content">
+              <div class="details-item">
+                <p class="details-item-label">Distance</p>
+                <p class="details-item-value">
+                  11,028<abbr class="unit" title="meters">km</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Pace</p>
+                <p class="details-item-value">
+                  3:24<abbr class="unit" title="per 500 Meters"> /500m</abbr>
+                </p>
+              </div>
+
+              <div class="details-item">
+                <p class="details-item-label">Time</p>
+                <p class="details-item-value">
+                  1<abbr class="unit" title="hour">h</abbr> 15<abbr
+                    class="unit"
+                    title="minute"
+                    >m</abbr
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

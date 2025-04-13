@@ -1,0 +1,58 @@
+/* ------------------ Variables */
+:root {
+  /* Couleurs thème clair */
+  --color-bg: #f8f9fa;
+  --color-text: #212529;
+  --color-card-bg: #ffffff;
+  --color-border: #ccc;
+
+  /* Typography */
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-sm: 0.875rem;
+
+  /* Spacings */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+
+  --view-transition-duration: 400ms;
+}
+
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-text: #f1f1f1;
+  --color-card-bg: #1e1e1e;
+  --color-border: #333;
+}
+
+/* ------------------ Reset minimal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.theme-dark {
+  --color-bg: #121212;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}

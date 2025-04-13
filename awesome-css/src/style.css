@@ -1,0 +1,22 @@
+@import "css/base/reset.css";
+@import "css/base/font.css";
+@import "css/base/variables.css";
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.635rem;
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 auto;
+}

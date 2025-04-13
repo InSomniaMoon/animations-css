@@ -1,0 +1,32 @@
+nav {
+  background-color: var(--primary-color);
+  padding-inline: 2rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    display: flex;
+    li {
+      height: inherit;
+      display: inherit;
+
+      a {
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--secondary-color);
+        }
+        &.active {
+          background-color: var(--primary-color__active);
+          cursor: default;
+        }
+      }
+    }
+  }
+}

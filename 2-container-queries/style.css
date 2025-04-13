@@ -1,0 +1,48 @@
+/* ------------------ Reset minimal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+main {
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* ------------------ Container Setup */
+.card-wrapper {
+  container-type: inline-size;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+/* ------------------ Component */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.card .content {
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  font-size: 0.8rem;
+  background-color: var(--accent-color);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  &.selected {
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: default;
+  }
+}
