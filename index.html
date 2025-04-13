@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* ------------------ Reset minimal */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 2rem;
+        background: #f8f9fa;
+      }
+      body {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+      }
+
+      .card {
+        container-type: inline-size;
+        padding: 1rem;
+        background: white;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="/1-grid/" class="card">1 - Grid</a>
+    <a href="/1-grid-subgrid/" class="card">1 - SubGrid</a>
+    <a href="/2-container-queries/" class="card">2 - Container queries</a>
+    <a href="/3-flex-box/" class="card">3 - Flex-box</a>
+    <a href="/4-variables/" class="card">4 - Variables</a>
+    <a href="/5-view-transition/" class="card">5 - View Transitions </a>
+  </body>
+</html>

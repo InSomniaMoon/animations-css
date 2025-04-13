@@ -1,0 +1,56 @@
+@import "css/base/reset.css";
+@import "css/base/font.css";
+@import "css/base/variables.css";
+
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    view-transition-name: unset !important;
+  }
+}
+
+::view-transition-old(main) {
+  animation: slide-out 0.6s ease-in;
+}
+::view-transition-new(main) {
+  animation: slide-in 0.6s ease-out;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+html {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.635rem;
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 auto;
+}

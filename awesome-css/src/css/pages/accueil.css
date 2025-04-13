@@ -1,0 +1,97 @@
+@import "/src/css/components/nav.css";
+@import "/src/css/components/activities.css";
+
+.activities {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 400px);
+  gap: 1rem;
+  padding: 4rem 1rem;
+  @media screen and (max-width: calc(400px + 2rem)) {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
+
+#activity-1 {
+  & .activity .activity-image {
+    view-transition-name: activity_1-image;
+  }
+  & .details .activity-image {
+    view-transition-name: unset;
+  }
+  &:hover {
+    .activity .activity-image {
+      view-transition-name: unset;
+    }
+    .details .activity-image {
+      view-transition-name: activity_1-image;
+    }
+  }
+}
+
+#activity-2 {
+  .activity .activity-image {
+    view-transition-name: activity_2-image;
+  }
+  .details .activity-image {
+    view-transition-name: unset;
+  }
+  &:hover {
+    .activity .activity-image {
+      view-transition-name: unset;
+    }
+    .details .activity-image {
+      view-transition-name: activity_2-image;
+    }
+  }
+}
+
+#activity-3 {
+  .activity .activity-image {
+    view-transition-name: activity_3-image;
+  }
+  .details .activity-image {
+    view-transition-name: unset;
+  }
+  &:hover {
+    .activity .activity-image {
+      view-transition-name: unset;
+    }
+    .details .activity-image {
+      view-transition-name: activity_3-image;
+    }
+  }
+}
+
+#activity-5 {
+  .activity .activity-image {
+    view-transition-name: activity_5-image;
+  }
+  .details .activity-image {
+    view-transition-name: unset;
+  }
+  &:hover {
+    .activity .activity-image {
+      view-transition-name: unset;
+    }
+    .details .activity-image {
+      view-transition-name: activity_5-image;
+    }
+  }
+}
+#activity-6 {
+  .activity .activity-image {
+    view-transition-name: activity_6image;
+  }
+  .details .activity-image {
+    view-transition-name: unset;
+  }
+  &:hover {
+    .activity .activity-image {
+      view-transition-name: unset;
+    }
+    .details .activity-image {
+      view-transition-name: activity_6-image;
+    }
+  }
+}

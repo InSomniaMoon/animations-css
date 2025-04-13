@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/css/components/activities.css" />
+    <link rel="stylesheet" href="/src/css/pages/accueil.css" />
+
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <script src="/src/js/components/activity.js" type="module"></script>
+
+    <style>
+      .activities {
+        padding: 4rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: start;
+        align-items: stretch;
+
+        gap: 1rem;
+
+        .activity-wrapper {
+          width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a href="/" class="active">Accueil</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Dernières activités</h1>
+
+      <div class="activities"></div>
+    </main>
+
+    <script>
+      const grid = document.querySelector(".activities");
+      fetch("/src/transformed_data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          data
+            .sort((a, b) => a.id - b.id)
+            .forEach((item) => {
+              const activityElement = document.createElement("activity-card");
+              activityElement.setAttribute("activity", JSON.stringify(item));
+              grid.appendChild(activityElement);
+            });
+        });
+    </script>
+  </body>
+</html>

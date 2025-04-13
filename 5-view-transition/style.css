@@ -1,0 +1,99 @@
+@import "base.css";
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* ------------------ Container Setup */
+.card-wrapper {
+  container-type: inline-size;
+  padding: 1rem;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+a.card-wrapper {
+  /* reset default a style */
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-border);
+    transform: scale(1.02);
+  }
+}
+
+/* ------------------ Component */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.card img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.card .content {
+  text-align: center;
+}
+
+/* ------------------ Container Query */
+@container (min-width: 370px) {
+  .card {
+    flex-direction: row;
+    text-align: left;
+    gap: var(--spacing-lg);
+  }
+
+  .card .content {
+    padding-left: 1rem;
+  }
+}
+
+/* ------------------- Flex box */
+
+.header,
+.footer {
+  border-color: var(--color-border);
+  background: var(--color-card-bg);
+}
+
+.header {
+  display: flex;
+  border-bottom: #ccc 1px solid;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-wrapper {
+  flex: 1;
+  overflow: auto;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+.footer {
+  border-top: #737272 1px solid;
+  padding: 1rem;
+}
+
+/* THeme switch */
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+}

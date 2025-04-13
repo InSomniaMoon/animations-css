@@ -1,0 +1,15 @@
+:root {
+  --surface: #ede7e0;
+  --text: #091313;
+  /* --surface: #e7dfd4; */
+  --background-color: #dbcfbd;
+
+  --primary-color: #1a3636;
+  --primary-color__active: rgb(13, 26, 26);
+  --on-primary-color: var(--surface);
+
+  --secondary-color: #40534c;
+  --on-secondary-color: var(--surface);
+
+  --accent-color: #d6bd98;
+}

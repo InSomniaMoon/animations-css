@@ -1,0 +1,17 @@
+@import "base.css";
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding-block: 2rem;
+  gap: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  max-width: 400px;
+}

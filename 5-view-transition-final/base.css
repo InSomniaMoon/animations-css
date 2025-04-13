@@ -1,0 +1,142 @@
+/* ------------------ Variables */
+:root {
+  /* Couleurs thème clair */
+  --color-bg: #f8f9fa;
+  --color-text: #212529;
+  --color-card-bg: #ffffff;
+  --color-border: #ccc;
+
+  /* Typography */
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-sm: 0.875rem;
+
+  /* Spacings */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+
+  --view-transition-duration: 400ms;
+}
+
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-text: #f1f1f1;
+  --color-card-bg: #1e1e1e;
+  --color-border: #333;
+}
+
+/* ------------------ Reset minimal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.theme-dark {
+  --color-bg: #121212;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(*) {
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+
+  animation-duration: var(--view-transition-duration);
+}
+
+::view-transition-group(card) {
+  animation-name: resize;
+  animation-duration: var(--view-transition-duration);
+}
+
+@keyframes resize {
+  from {
+    transform: scale(1); /* Taille d'origine */
+  }
+  to {
+    transform: scale(1.5); /* Augmente la taille à 1.5 fois */
+  }
+}
+
+/* PUSH TRANSITION */
+html[data-direction="forward"]::view-transition-old(root) {
+  animation: push-out var(--view-transition-duration) ease forwards;
+}
+html[data-direction="forward"]::view-transition-new(root) {
+  animation: push-in var(--view-transition-duration) ease forwards;
+}
+
+/* POP TRANSITION */
+html[data-direction="backward"]::view-transition-old(root) {
+  animation: pop-out var(--view-transition-duration) ease forwards;
+}
+html[data-direction="backward"]::view-transition-new(root) {
+  animation: pop-in var(--view-transition-duration) ease forwards;
+}
+/* Keyframes - PUSH */
+@keyframes push-out {
+  from {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-50%) rotateY(-15deg);
+    opacity: 0.8;
+  }
+}
+@keyframes push-in {
+  from {
+    transform: translateX(50%) rotateY(15deg);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes - POP */
+@keyframes pop-out {
+  from {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(50%) rotateY(15deg);
+    opacity: 0.8;
+  }
+}
+@keyframes pop-in {
+  from {
+    transform: translateX(-50%) rotateY(-15deg);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+}
